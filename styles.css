@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3efef;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #bac2ed; /* Sky blue */
+    overflow: hidden;
+}
+
+#basket {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 20px;
+    background-color: #8B4513; /* Saddle brown */
+    transform: translateX(-50%);
+}
+
+#ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FF4500; /* Orange red */
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.75); /* Glowing effect */
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #000000; /* White */
+    background-color: #db01ef4a; /* Black */
+    padding: 5px 10px;
+    border-radius: 5px;
+} 
+
+#hearts {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: rgb(223, 8, 8);
+}
+
+.heart {
+    margin-right: 5px;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
+
+#restart-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background-color: #45a049; /* Darker green */
+}
